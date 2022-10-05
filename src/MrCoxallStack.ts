@@ -8,4 +8,14 @@
  */
 
 class MrCoxallStack {
-  
+  stackAsList = []
+
+  push(pushedNumber: number): null {
+    this.stackAsList.push(pushedNumber)
+  }
+
+  show(): null {
+    console.log(this.stackAsList)
+  }
+}
+export = MrCoxallStack
