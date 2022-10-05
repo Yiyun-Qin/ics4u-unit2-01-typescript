@@ -13,4 +13,3 @@ newStack = new MrCoxallStack()
 
 const passedNumber = prompt('Enter an integer: ')
 newStack.push(passedNumber)
-
