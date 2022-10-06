@@ -1,15 +1,24 @@
 /**
- * The HelloWorld program implements an application that
- * simply displays energy released question to the standard output.
+ * This the the program for using stacks
  *
  * By:      Yiyun Qin
  * Version: 1.0
  * Since:   2022-09-23
  */
 
-import MrCoxallStack from './MrCoxallStack'
-
-newStack = new MrCoxallStack()
-
-const passedNumber = prompt('Enter an integer: ')
-newStack.push(passedNumber)
+ import MrCoxallStack from './MrCoxallStack'
+ import promptSync from 'prompt-sync'
+ 
+ const prompt = promptSync()
+ const newStack = new MrCoxallStack()
+ let passedNumberString: string | null
+ 
+ passedNumberString = prompt('Enter an integer: ')
+ 
+ const passedNumber = parseInt(passedNumberString)
+ if (isNaN(passedNumber)) {
+   console.log('Invalid Number!')
+ } else {
+   newStack.pushItem(passedNumber)
+   newStack.show()
+ }

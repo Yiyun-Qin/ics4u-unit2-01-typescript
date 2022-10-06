@@ -1,20 +1,19 @@
 /**
- * The HelloWorld program implements an application that
- * simply displays energy released question to the standard output.
+ * This is the stack
  *
  * By:      Yiyun Qin
  * Version: 1.0
  * Since:   2022-09-23
  */
 
-class MrCoxallStack {
-  stackAsList = []
+ class MrCoxallStack {
+  let stackAsList: number[] = []
 
-  push(pushedNumber: number): null {
+  pushItem(pushedNumber: number): void {
     this.stackAsList.push(pushedNumber)
   }
 
-  show(): null {
+  show(): void {
     console.log(this.stackAsList)
   }
 }
