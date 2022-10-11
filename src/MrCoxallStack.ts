@@ -7,7 +7,7 @@
  */
 
  class MrCoxallStack {
-  let stackAsList: number[] = []
+  stackAsList: number[] = []
 
   pushItem(pushedNumber: number): void {
     this.stackAsList.push(pushedNumber)

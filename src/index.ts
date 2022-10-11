@@ -11,9 +11,8 @@
  
  const prompt = promptSync()
  const newStack = new MrCoxallStack()
- let passedNumberString: string | null
  
- passedNumberString = prompt('Enter an integer: ')
+ const passedNumberString = prompt('Enter an integer: ')
  
  const passedNumber = parseInt(passedNumberString)
  if (isNaN(passedNumber)) {
@@ -22,3 +21,4 @@
    newStack.pushItem(passedNumber)
    newStack.show()
  }
+ console.log('\nDone.')
