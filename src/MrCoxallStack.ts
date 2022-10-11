@@ -6,7 +6,7 @@
  * Since:   2022-09-23
  */
 
- class MrCoxallStack {
+class MrCoxallStack {
   stackAsList: number[] = []
 
   pushItem(pushedNumber: number): void {
