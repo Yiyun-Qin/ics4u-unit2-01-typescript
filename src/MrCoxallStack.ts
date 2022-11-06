@@ -6,13 +6,26 @@
  * Since:   2022-09-23
  */
 
-class MrCoxallStack {
+ class MrCoxallStack {
+  /**
+   * The list that contains the number inputted.
+   *
+   */
   stackAsList: number[] = []
 
+  /**
+   * The push() function.
+   *
+   * @param {number} pushedNumber The number inputted from the user
+   */
   pushItem(pushedNumber: number): void {
     this.stackAsList.push(pushedNumber)
   }
 
+  /**
+   * The show() function.
+   *
+   */
   show(): void {
     console.log(this.stackAsList)
   }
